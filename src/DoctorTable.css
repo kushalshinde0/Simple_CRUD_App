@@ -1,0 +1,160 @@
+/* DoctorTable.css */
+
+.tabledoctor {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.358);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+/* Header Styling */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    /* background: ; */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+/* tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button.edit {
+    background-color: lightskyblue;
+}
+
+button.edit:hover {
+    background-color: pink;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #e53935;
+}
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    padding: 20px;
+    background: linear-gradient(135deg, #a8e6cf90 0%, #dcedc17c 100%);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    color: #333;
+}
+
+/* Input Fields Styling */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:hover {
+    background-color: #e0f7fa;
+}
+
+input:focus {
+    outline: none;
+    border-color: ;
+    box-shadow: 0px 0px 8px rgba(255, 107, 107, 0.5);
+    background-color: #fff;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    width: 60%;
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background:gray;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    background: linear-gradient(135deg, #2de136, #3bb895);
+    transform: scale(0.98);
+}
+
+/* Funky Placeholder and Text */
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Styling for Focused Form Area */
+form:focus-within {
+    border: 2px solid #ff6b6b;
+    transition: border-color 0.3s ease;
+}
